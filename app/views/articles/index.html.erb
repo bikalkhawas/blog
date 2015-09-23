@@ -14,7 +14,7 @@
       
 
       <td>
-        <%= link_to article_path(article), class: 'btn btn-default' do %>
+        <%= link_to  article_path(article), class: 'btn btn-default' do %>
         <span class="glyphicon glyphicon-search"></span>
          Show
         <% end %>
@@ -28,7 +28,7 @@
     </td>
 
     <td>
-       <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>
+       <%= link_to article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' do %>
        <span class="glyphicon glyphicon-remove"></span>
          Destroy
       <% end %>
